@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+h1{
+    color: #ff0000;
+}
+h2{
+    color: rgb(246, 255, 0);
+}
+
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#0f172a;
+}
+
+.game{
+    text-align:center;
+    color:white;
+}
+
+#status{
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+.board{
+    display:grid;
+    grid-template-columns:repeat(3,100px);
+    gap:10px;
+    margin-bottom:15px;
+}
+
+.cell{
+    width:100px;
+    height:100px;
+    background:#1e293b;
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:48px;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+.cell:hover{
+    background:#334155;
+}
+
+/* 👇 Unique colors while playing */
+
+.cell.x{
+    color:#22d3ee;   /* X ka unique neon blue color */
+    text-shadow:0 0 10px #22d3ee;
+}
+
+.cell.o{
+    color:#fb7185;   /* O ka unique pink color */
+    text-shadow:0 0 10px #fb7185;
+}
+
+button{
+    padding:10px 18px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+}
